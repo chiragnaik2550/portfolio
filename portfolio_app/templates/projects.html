@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects | Gaurav</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+        body{background:linear-gradient(135deg,#020617,#0f172a);color:#e5e7eb}
+
+        nav{display:flex;justify-content:space-between;align-items:center;padding:25px 70px}
+        nav h2{color:#38bdf8}
+        nav ul{display:flex;gap:35px;list-style:none}
+        nav a{text-decoration:none;color:#e5e7eb;transition:.3s}
+        nav a:hover{color:#38bdf8}
+
+        .container{padding:80px;text-align:center}
+        h1{font-size:3rem;margin-bottom:20px}
+        span{color:#38bdf8}
+
+        .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;margin-top:50px}
+        .card{background:#020617;padding:30px;border-radius:20px;transition:.3s}
+        .card:hover{transform:translateY(-8px)}
+        .card h3{color:#38bdf8;margin-bottom:10px}
+    </style>
+</head>
+
+<body>
+<nav>
+    <h2>Gaurav</h2>
+    <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'projects' %}">Projects</a></li>
+        <li><a href="{% url 'skills' %}">Skills</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="container">
+    <h1>My <span>Projects</span></h1>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Safe Route Finder</h3>
+            <p>Django-based safety route application.</p>
+        </div>
+        <div class="card">
+            <h3>Recipe App</h3>
+            <p>CRUD-based recipe management system.</p>
+        </div>
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio using Django.</p>
+        </div>
+    </div>
+</section>
+</body>
+</html>
